@@ -3,6 +3,7 @@ import Minigame from './pages/Minigame'
 import Home from './pages/Home'
 import Profile from './pages/Profile'
 import Contact from './pages/Contact'
+import Footer from './components/footer'
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path ="/Profile" element={<Profile/>} />
         <Route path ="/Contact" element={<Contact/>} />
       </Routes>
+      <Footer/>
     </>
   )
 }

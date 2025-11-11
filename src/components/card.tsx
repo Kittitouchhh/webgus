@@ -4,14 +4,14 @@ interface CardProps {
   onClick: () => void;
 }
 
-export default function Card({ image, numbers, onClick }: CardProps) {
+export default function Card({ image, onClick }: CardProps) {
   return (
     <div
       onClick={onClick}
-      className="relative w-40 h-40 bg-gray-200 rounded-lg overflow-hidden cursor-pointer hover:scale-110 transition duration-300"
+      className=" justify-center flex bg-gray-300 rounded-xl 
+      last:[grid-column:1/4] last:h-[40%] "
     >
-      <img className="shadow-2xl object-cover w-full h-full" src={image} alt="card" />
-      <div className="text-2xl mt-2">{numbers}</div>
+      <img className="shadow-2xl  rounded-xl  cursor-pointer hover:scale-110 transition duration-300   " src={image} alt="card" />
     </div>
   );
 }
